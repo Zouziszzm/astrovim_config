@@ -81,5 +81,6 @@ return {
     --     ["~/%.config/foo/.*"] = "fooscript",
     --   },
     -- }
+    vim.cmd("colorscheme kanagawa")
  end,
 }
