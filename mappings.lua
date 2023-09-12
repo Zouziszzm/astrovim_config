@@ -4,6 +4,7 @@
 -- lower level configuration and more robust one. (which-key will
 -- automatically pick-up stored data by this setting.)
 return {
+
   -- first key is the mode
   n = {
     -- second key is the lefthand side of the map
@@ -15,9 +16,14 @@ return {
     -- },
     -- H = {
     --   function() require("astronvim.utils.buffer").nav(-(vim.v.count > 0 and vim.v.count or 1)) end,
-    --   desc = "Previous buffer",
     -- },
-
+    ["<C-a>"]={"ggVG"},
+    ["<C-v>"]={ '"+p'},
+    ["<S-Right>"]={'0'},
+    ["<S-Left>"]={'$'},
+    ["<A-Right>"] = {":bnext<CR>" },
+    ["<A-Left>"] = { ":bprevious<CR>"},
+    ["qq"] = {"<esc>"},
     -- mappings seen under group name "Buffer"
     ["<leader>bD"] = {
       function()
@@ -35,6 +41,6 @@ return {
   },
   t = {
     -- setting a mapping to false will disable it
-    -- ["<esc>"] = false,
+    -- ["<esc>"]= false,
   },
 }
