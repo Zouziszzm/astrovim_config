@@ -21,9 +21,10 @@ return {
     ["<C-v>"]={ '"+p'},
     ["<S-Right>"]={'0'},
     ["<S-Left>"]={'$'},
+    ["<C-c>"]={'"+y'},
     ["<A-Right>"] = {":bnext<CR>" },
     ["<A-Left>"] = { ":bprevious<CR>"},
-    ["qq"] = {"<esc>"},
+    ["qq"] = {"<Esc>"},
     -- mappings seen under group name "Buffer"
     ["<leader>bD"] = {
       function()
@@ -38,6 +39,12 @@ return {
     ["<leader>b"] = { name = "Buffers" },
     -- quick save
     -- ["<C-s>"] = { ":w!<cr>", desc = "Save File" },  -- change description but the same command
+  },
+  v={
+    ["<C-c>"]={'"+y'}
+  },
+  i={
+    ["qq"]={"<Esc>"}
   },
   t = {
     -- setting a mapping to false will disable it
