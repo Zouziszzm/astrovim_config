@@ -55,4 +55,10 @@ return {
     })
     end,
   },
+  {
+  's1n7ax/nvim-comment-frame',
+    config = function()
+        require('nvim-comment-frame').setup()
+    end
+  },
 }
