@@ -23,10 +23,10 @@ Press the "Use this template" button above to create a new repository to store y
 
 You can also just clone this repository directly if you do not want to track your user configuration in GitHub.
 
-#### Clone the repository
+#### Clone theis repository into the user (you write your configs here)
 
 ```shell
-git clone https://github.com/<your_user>/<your_repository> ~/.config/nvim/lua/user
+git clone https://github.com/Zouziszzm/astrovim_config.git ~/.config/nvim/lua/user
 ```
 
 #### Start Neovim
