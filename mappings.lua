@@ -19,8 +19,8 @@ return {
     -- },
     ["<C-a>"]={"ggVG"},
     ["<C-v>"]={ '"+p'},
-    ["<S-Right>"]={'0'},
-    ["<S-Left>"]={'$'},
+    ["<S-Right>"]={'_'},
+    ["<S-Left>"]={'g_'},
     ["<C-c>"]={'"+y'},
     ["<A-Right>"] = {":bnext<CR>" },
     ["<A-Left>"] = { ":bprevious<CR>"},
@@ -34,7 +34,7 @@ return {
       end,
       desc = "Pick to close",
     },
-    -- tables with the `name` key will be registered with which-key if it's installed
+    -- tables with the `name` key will be registered with which-key if it's installed                     
     -- this is useful for naming menus
     ["<leader>b"] = { name = "Buffers" },
     -- quick save
