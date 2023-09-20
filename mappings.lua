@@ -21,6 +21,7 @@ return {
     ["<C-v>"]={ '"+p'},
     ["<S-Right>"]={'_'},
     ["<S-Left>"]={'g_'},
+    ["<S-m>"]={'gM'},
     ["<C-c>"]={'"+y'},
     ["<A-Right>"] = {":bnext<CR>" },
     ["<A-Left>"] = { ":bprevious<CR>"},
