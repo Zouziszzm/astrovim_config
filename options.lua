@@ -5,12 +5,12 @@ return {
     relativenumber = false, -- sets vim.opt.relativenumber
     number = true, -- sets vim.opt.number
     spell = true, -- sets vim.opt.spell
-    signcolumn = "auto", -- sets vim.opt.signcolumn to auto
+    signcolumn = "no", -- sets vim.opt.signcolumn to auto
     wrap = false, -- sets vim.opt.wrap
     clipboard = "unnamedplus",
     termguicolors = true,
     colorcolumn = "",
-    signcolumn = "no",
+    cursorline= false,
     guicursor = "n-v-c-sm:block,i-ci-ve:ver25,r-cr-o:hor20,n-i:blinkwait700-blinkon400-blinkoff250",
     wrap = true, -- disable wrapping of lines longer than the width of window
   },
