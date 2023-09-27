@@ -10,7 +10,7 @@ return {
     clipboard = "unnamedplus",
     termguicolors = true,
     colorcolumn = "",
-    cursorline= false,
+    cursorline= true,
     guicursor = "n-v-c-sm:block,i-ci-ve:ver25,r-cr-o:hor20,n-i:blinkwait700-blinkon400-blinkoff250",
     wrap = true, -- disable wrapping of lines longer than the width of window
   },
