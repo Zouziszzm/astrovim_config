@@ -2,17 +2,11 @@
 return {
   opt = {
     -- set to true or false etc.
-    relativenumber = false, -- sets vim.opt.relativenumber
+    relativenumber = true, -- sets vim.opt.relativenumber
     number = true, -- sets vim.opt.number
-    spell = true, -- sets vim.opt.spell
-    signcolumn = "no", -- sets vim.opt.signcolumn to auto
+    spell = false, -- sets vim.opt.spell
+    signcolumn = "auto", -- sets vim.opt.signcolumn to auto
     wrap = false, -- sets vim.opt.wrap
-    clipboard = "unnamedplus",
-    termguicolors = true,
-    colorcolumn = "",
-    cursorline= true,
-    guicursor = "n-v-c-sm:block,i-ci-ve:ver25,r-cr-o:hor20,n-i:blinkwait700-blinkon400-blinkoff250",
-    wrap = true, -- disable wrapping of lines longer than the width of window
   },
   g = {
     mapleader = " ", -- sets vim.g.mapleader
@@ -26,11 +20,11 @@ return {
   },
 }
 -- If you need more control, you can use the function()...end notation
---function(local_vim)
+-- return function(local_vim)
 --   local_vim.opt.relativenumber = true
 --   local_vim.g.mapleader = " "
 --   local_vim.opt.whichwrap = vim.opt.whichwrap - { 'b', 's' } -- removing option from list
 --   local_vim.opt.shortmess = vim.opt.shortmess + { I = true } -- add to option list
 --
 --   return local_vim
---end
+-- end

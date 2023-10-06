@@ -56,7 +56,7 @@ return {
 
   -- Configure require("lazy").setup() options
   lazy = {
-    defaults = { lazy = false },
+    defaults = { lazy = true },
     performance = {
       rtp = {
         -- customize default disabled vim plugins
@@ -81,7 +81,5 @@ return {
     --     ["~/%.config/foo/.*"] = "fooscript",
     --   },
     -- }
-    --vim.cmd("colorscheme kanagawa")
-    vim.cmd('colorscheme rose-pine')
- end,
+  end,
 }
